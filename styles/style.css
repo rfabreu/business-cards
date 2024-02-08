@@ -142,7 +142,7 @@ body {
 /* Screens in Portrait Orientation */
 @media screen and (orientation: portrait) {
     .container {
-        margin: 20% auto;
+        margin: 15% auto;
     }
 
     .profile-pic {

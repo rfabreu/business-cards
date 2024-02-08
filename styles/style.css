@@ -84,7 +84,7 @@ body {
 
 .logo-img {
     /* width: 80%; */
-    width: 60%;
+    width: 68%;
     height: auto;
     filter: drop-shadow(0 0 0.5px white) drop-shadow(0 0 0.5px orange);
 }
@@ -142,26 +142,26 @@ body {
 /* Screens in Portrait Orientation */
 @media screen and (orientation: portrait) {
     .container {
-        margin: 5% auto;
+        margin: 20% auto;
     }
 
     .profile-pic {
-        width: 30vw;
-        height: 30vw;
+        width: 40vw;
+        height: 40vw;
     }
 
     .name {
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .title {
-        font-size: 5vw; 
+        font-size: 6vw; 
     }
 
     .links a {
-        width: 15vw;
-        height: 15vw;
-        font-size: 5vw;
-        line-height: 15vw;
+        width: 16vw;
+        height: 16vw;
+        font-size: 6vw;
+        line-height: 16vw;
     }
 }

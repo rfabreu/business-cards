@@ -23,30 +23,32 @@
 // }
 
 
-const vCardCreator = require( 'vcard-creator' );
+// var vCardText;
 
-const vCard = vCardCreator.create({
-    firstName: "Rafael",
-    lastName: "Abreu",
-    email: "rafaelg@nextologies.com",
-    phone: "+16479424044",
-    address: {
-        street: "120 Amber Street",
-        city: "Markham",
-        region: "Ontario",
-        postalCode: "M3R 1A2",
-        country: "Canada"
-    },
-    note: "MCR Supervisor | L2"
-});
+// const vCardCreator = require( 'vcard-creator' );
 
-const vCardText = vCardCreator.toString(vCard);
+// const vCard = vCardCreator.create({
+//     firstName: "Rafael",
+//     lastName: "Abreu",
+//     email: "rafaelg@nextologies.com",
+//     phone: "+16479424044",
+//     address: {
+//         street: "120 Amber Street",
+//         city: "Markham",
+//         region: "Ontario",
+//         postalCode: "M3R 1A2",
+//         country: "Canada"
+//     },
+//     note: "MCR Supervisor | L2"
+// });
 
-var link = document.getElementById("contactLink");
+// vCardText = vCardCreator.toString(vCard);
 
-link.addEventListener( "click", function() {
-   alert("Contact saved!");
-});
+// var link = document.getElementById("contactLink");
+
+// link.addEventListener( "click", function() {
+//    alert("Contact saved!");
+// });
 
 
 

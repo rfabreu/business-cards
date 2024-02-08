@@ -11,8 +11,10 @@ body {
 }
 
 .container {
-    max-width: 400px;
-    margin: 30% auto;
+    /* max-width: 400px; */
+    max-width: 80%;
+    /* margin: 30% auto; */
+    margin: 10% auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -21,8 +23,10 @@ body {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    /* width: 150px; */
+    width: 20vw;
+    /* height: 150px; */
+    height: 20vw;
     border-radius: 50%;
     /* border: #ff8000  solid 1px;
     box-shadow: 0 0 3px #ff8000, 0 0 3px #ff8000, 0 0 3px #ff8000; */
@@ -30,14 +34,16 @@ body {
 }
 
 .name {
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 5vw;
     font-weight: bold;
     margin-top: 20px;
     text-shadow: 0 0 5px #c3e8e861, 0 0 10px #c3e8e861, 0 0 20px #c3e8e861;
 }
 
 .title {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 4vw;
     margin-top: 10px;
     text-shadow: 0 0 2px #c3e8e861, 0 0 4px #c3e8e861, 0 0 10px #c3e8e861;
 }
@@ -48,13 +54,17 @@ body {
 
 .links a {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+    width: 10vw;
+    /* height: 50px; */
+    height: 10vw;
     border-radius: 50%;
     background-color: #333;
     color: #fff;
-    font-size: 24px;
-    line-height: 50px;
+    /* font-size: 24px; */
+    font-size: 4vw;
+    /* line-height: 50px; */
+    line-height: 10vw;
     margin: 10px;
     text-decoration: none;
     /* box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff; */
@@ -73,7 +83,8 @@ body {
 }
 
 .logo-img {
-    width: 80%;
+    /* width: 80%; */
+    width: 60%;
     height: auto;
     filter: drop-shadow(0 0 0.5px white) drop-shadow(0 0 0.5px orange);
 }
@@ -94,7 +105,8 @@ body {
 
 .sign,
 .copyright {
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 2vw;
     margin: 0;
     color: #fff;
     text-decoration: none;
@@ -107,4 +119,49 @@ body {
 
 .sign a:hover {
     text-decoration: none;
+}
+
+
+
+/*  Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 400px;
+        margin: 20% auto;
+    }
+
+    .links {
+        margin-top: 50px;
+    }
+
+    .logo {
+        margin-top: 50px;
+    }
+}
+
+/* Screens in Portrait Orientation */
+@media screen and (orientation: portrait) {
+    .container {
+        margin: 5% auto;
+    }
+
+    .profile-pic {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .name {
+        font-size: 6vw;
+    }
+
+    .title {
+        font-size: 5vw; 
+    }
+
+    .links a {
+        width: 15vw;
+        height: 15vw;
+        font-size: 5vw;
+        line-height: 15vw;
+    }
 }

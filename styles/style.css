@@ -1,7 +1,15 @@
+:root {
+    --color-base: #101010;
+    --color-outline: #ff8000;
+    --color-text: #fff;
+    --color-txtDecoration: #c3e8e861;
+    --color-button: #333;
+    --color-buttonFocus: #444;
+}
+
 body {
-    /* background-color: #222; */
-    background-color: #101010;
-    color: #fff;
+    background-color: var(--color-base);
+    color: var(--color-text);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,9 +19,7 @@ body {
 }
 
 .container {
-    /* max-width: 400px; */
     max-width: 80%;
-    /* margin: 30% auto; */
     margin: 10% auto;
     text-align: center;
     display: flex;
@@ -23,29 +29,25 @@ body {
 }
 
 .profile-pic {
-    /* width: 150px; */
     width: 20vw;
-    /* height: 150px; */
     height: 20vw;
     border-radius: 50%;
-    border: #ff8000  solid 0.1vh;
-    box-shadow: 0 0 0.4vh #ff8000, 0 0 0.4vh #ff8000, 0 0 0.4vh #ff8000;
+    border: var(--color-outline) solid 0.1vh;
+    box-shadow: 0 0 0.4vh var(--color-outline), 0 0 0.4vh var(--color-outline), 0 0 0.4vh var(--color-outline);
     object-fit: cover;
 }
 
 .name {
-    /* font-size: 32px; */
     font-size: 5vw;
     font-weight: bold;
     margin-top: 20px;
-    text-shadow: 0 0 5px #c3e8e861, 0 0 10px #c3e8e861, 0 0 20px #c3e8e861;
+    text-shadow: 0 0 5px var(--color-txtDecoration), 0 0 10px var(--color-txtDecoration), 0 0 20px var(--color-txtDecoration);
 }
 
 .title {
-    /* font-size: 24px; */
     font-size: 4vw;
     margin-top: 10px;
-    text-shadow: 0 0 2px #c3e8e861, 0 0 4px #c3e8e861, 0 0 10px #c3e8e861;
+    text-shadow: 0 0 2px var(--color-txtDecoration), 0 0 4px var(--color-txtDecoration), 0 0 10px var(--color-txtDecoration);
 }
 
 .links {
@@ -54,28 +56,22 @@ body {
 
 .links a {
     display: inline-block;
-    /* width: 50px; */
     width: 10vw;
-    /* height: 50px; */
     height: 10vw;
     border-radius: 50%;
-    background-color: #333;
-    color: #fff;
-    /* font-size: 24px; */
+    background-color: var(--color-button);
+    color: var(--color-text);
     font-size: 4vw;
-    /* line-height: 50px; */
     line-height: 10vw;
     margin: 10px;
     text-decoration: none;
-    /* box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff; */
-    box-shadow: 0 0 5px #ff8000, 0 0 10px #ff8000, 0 0 20px #ff8000;
+    box-shadow: 0 0 5px var(--color-outline), 0 0 10px var(--color-outline), 0 0 20px var(--color-outline);
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .links a:hover {
-    background-color: #444;
-    /* box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff; */
-    box-shadow: 0 0 10px #ff8000, 0 0 20px #ff8000, 0 0 40px #ff8000;
+    background-color: var(--color-buttonFocus);
+    box-shadow: 0 0 10px var(--color-outline), 0 0 20px var(--color-outline), 0 0 40px var(--color-outline);
 }
 
 .logo {
@@ -83,15 +79,14 @@ body {
 }
 
 .logo-img {
-    /* width: 80%; */
     width: 68%;
     height: auto;
-    filter: drop-shadow(0 0 0.5px white) drop-shadow(0 0 0.5px orange);
+    filter: drop-shadow(0 0 0.5px var(--color-text)) drop-shadow(0 0 0.5px var(--color-outline));
 }
 
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--color-button);
+    color: var(--color-text);
     padding: 6px 2%;
     margin-top: auto;
     width: 100%;
@@ -105,10 +100,9 @@ body {
 
 .sign,
 .copyright {
-    /* font-size: 12px; */
     font-size: 2vw;
     margin: 0;
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
 }
 
@@ -155,7 +149,7 @@ body {
     }
 
     .title {
-        font-size: 6vw; 
+        font-size: 6vw;
     }
 
     .links a {

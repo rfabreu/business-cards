@@ -28,8 +28,8 @@ body {
     /* height: 150px; */
     height: 20vw;
     border-radius: 50%;
-    /* border: #ff8000  solid 1px;
-    box-shadow: 0 0 3px #ff8000, 0 0 3px #ff8000, 0 0 3px #ff8000; */
+    border: #ff8000  solid 0.1vh;
+    box-shadow: 0 0 0.4vh #ff8000, 0 0 0.4vh #ff8000, 0 0 0.4vh #ff8000;
     object-fit: cover;
 }
 
